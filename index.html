@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="NA RÉGUA STUDIO — No grau. No estilo. Na régua.">
+  <title>NA RÉGUA STUDIO | Agendamento</title>
+
+  <!-- Conexão com o CSS -->
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="marca">
+      <span class="marca-linha">ESTILO DE QUEBRADA</span>
+
+      <h1>NA RÉGUA<span>.</span></h1>
+
+      <p class="subtitulo">S T U D I O</p>
+
+      <div class="linha-dourada"></div>
+
+      <p class="slogan">NO GRAU. NO ESTILO. NA RÉGUA.</p>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- CARTÃO DE AGENDAMENTO -->
+    <section class="cartao">
+
+      <div class="topo-cartao">
+        <span class="numero">01</span>
+
+        <div>
+          <h2>Marca seu horário</h2>
+          <p>Escolhe o melhor horário pra você.</p>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <form id="formAgendamento">
+
+        <label for="nome">Seu nome</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Como você se chama?"
+          autocomplete="name"
+          required
+        >
+
+        <label for="data">Qual dia?</label>
+        <input
+          type="date"
+          id="data"
+          name="data"
+          required
+        >
+
+        <label for="horario">Qual horário?</label>
+        <input
+          type="time"
+          id="horario"
+          name="horario"
+          required
+        >
+
+        <button type="submit">
+          CHAMAR NO WHATSAPP <span>↗</span>
+        </button>
+
+      </form>
+
+      <!-- MENSAGEM DE RETORNO -->
+      <p id="mensagem" role="status" aria-live="polite"></p>
+
+      <!-- AVISO -->
+      <div class="aviso">
+        <span>✦</span>
+        <p>
+          Seu estilo, suas regras.
+          O horário será confirmado pelo salão.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- FRASE DE DESTAQUE -->
+    <section class="frase">
+      <p>RESPEITA A CAMINHADA.</p>
+      <h2>CHEGA NA RÉGUA.</h2>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>NA RÉGUA STUDIO © 2026</p>
+    <p>Feito na quebrada. Pensado no detalhe.</p>
+  </footer>
+
+  <!-- CONEXÃO COM O JAVASCRIPT -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
