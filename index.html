@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Barbearia Rodrigues: cortes masculinos, barba e agendamento pelo WhatsApp.">
+
+  <title>Barbearia Rodrigues | Estilo e Tradição</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topo">
+    <a href="#inicio" class="logo">BARBEARIA <span>RODRIGUES</span></a>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="botao botao-topo" href="#agendamento">Agendar horário</a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-conteudo">
+        <p class="subtitulo">ESTILO • QUALIDADE • TRADIÇÃO</p>
+
+        <h1>Seu estilo começa<br>na <span>Barbearia Rodrigues.</span></h1>
+
+        <p class="descricao">
+          Mais que um corte, uma experiência.
+          Venha renovar seu visual com a gente.
+        </p>
+
+        <div class="hero-botoes">
+          <a href="#agendamento" class="botao">Agendar meu horário</a>
+          <a href="#servicos" class="botao botao-secundario">Ver serviços</a>
+        </div>
+
+        <p class="aviso">✦ Atendimento com hora marcada</p>
+      </div>
+    </section>
+
+    <section id="servicos" class="secao">
+      <p class="subtitulo">O QUE OFERECEMOS</p>
+      <h2>Nossos <span>serviços</span></h2>
+      <p class="introducao">Escolha o serviço ideal para você.</p>
+
+      <div class="servicos">
+        <article class="card">
+          <div class="icone">✂</div>
+          <h3>Corte masculino</h3>
+          <p>Corte personalizado para valorizar seu estilo.</p>
+          <div class="preco">R$ 45 <small>/ 40 min</small></div>
+          <button class="botao escolher-servico" data-servico="Corte masculino">
+            Escolher serviço
+          </button>
+        </article>
+
+        <article class="card destaque">
+          <div class="selo">MAIS COMPLETO</div>
+          <div class="icone">🪒</div>
+          <h3>Barba completa</h3>
+          <p>Acabamento cuidadoso para deixar sua barba alinhada.</p>
+          <div class="preco">R$ 35 <small>/ 30 min</small></div>
+          <button class="botao escolher-servico" data-servico="Barba completa">
+            Escolher serviço
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="icone">★</div>
+          <h3>Cabelo + barba</h3>
+          <p>O combo ideal para renovar seu visual por completo.</p>
+          <div class="preco">R$ 70 <small>/ 1 hora</small></div>
+          <button class="botao escolher-servico" data-servico="Combo cabelo + barba">
+            Escolher serviço
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="secao galeria-secao">
+      <p class="subtitulo">NOSSO TRABALHO</p>
+      <h2>Estilo em cada <span>detalhe</span></h2>
+
+      <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Ambiente de barbearia">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Corte masculino">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Barbeiro trabalhando">
+      </div>
+      <p class="nota-foto">Fotos ilustrativas. Substitua por fotos reais dos seus cortes quando quiser.</p>
+    </section>
+
+    <section id="agendamento" class="secao agendamento-secao">
+      <p class="subtitulo">RESERVE SEU HORÁRIO</p>
+      <h2>Faça seu <span>agendamento</span></h2>
+      <p class="introducao">Preencha os dados e envie seu pedido pelo WhatsApp.</p>
+
+      <form id="form-agendamento" class="formulario">
+        <div class="campo">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Seu telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" inputmode="tel" required>
+        </div>
+
+        <div class="campo">
+          <label for="servico">Escolha o serviço</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="Corte masculino">Corte masculino — R$ 45</option>
+            <option value="Barba completa">Barba completa — R$ 35</option>
+            <option value="Combo cabelo + barba">Combo cabelo + barba — R$ 70</option>
+          </select>
+        </div>
+
+        <div class="campos-duplos">
+          <div class="campo">
+            <label for="data">Data desejada</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+
+          <div class="campo">
+            <label for="hora">Horário desejado</label>
+            <select id="hora" name="hora" required>
+              <option value="">Escolha a data primeiro</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="mensagem-aviso">
+          Seu horário será solicitado pelo WhatsApp e precisará ser confirmado pela barbearia.
+        </p>
+
+        <button type="submit" class="botao botao-enviar">
+          Solicitar pelo WhatsApp
+        </button>
+      </form>
+    </section>
+
+    <section id="contato" class="secao contato-secao">
+      <p class="subtitulo">VENHA NOS VISITAR</p>
+      <h2>Onde estamos</h2>
+
+      <div class="contato-grid">
+        <div class="contato-info">
+          <h3>Barbearia Rodrigues</h3>
+          <p><strong>Endereço:</strong><br>Travessa Tipuana, 30</p>
+          <p><strong>CEP:</strong> 09404-090</p>
+          <p><strong>Horário de abertura:</strong><br>Às 09h. Consulte a disponibilidade pelo WhatsApp.</p>
+          <a class="botao" href="https://www.google.com/maps/search/?api=1&query=Travessa+Tipuana+30+09404-090" target="_blank" rel="noopener">
+            Ver no mapa
+          </a>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            title="Localização da Barbearia Rodrigues"
+            src="https://maps.google.com/maps?q=Travessa%20Tipuana%2030%2009404-090&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <a href="#inicio" class="logo">BARBEARIA <span>RODRIGUES</span></a>
+    <p>Estilo e tradição em cada corte.</p>
+    <p class="copyright">© 2026 Barbearia Rodrigues. Todos os direitos reservados.</p>
+  </footer>
+
+  <a id="whatsapp-flutuante" class="whatsapp-flutuante" href="#" target="_blank" rel="noopener" aria-label="Falar com a barbearia pelo WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
